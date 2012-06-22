@@ -1,0 +1,65 @@
+body {
+   max-width: 66%;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   color: black;
+}
+
+h1, h2, h3, h4, h5{
+   padding: 0;
+   margin: 0;
+}
+
+a .liens:hover {
+   text-decoration: underline;
+}
+
+a:hover{
+   text-decoration: none;
+}
+
+div{
+   float: left;
+}
+
+table{
+   text-align: center;
+   border-collapse: collapse;
+}
+
+p{
+   text-align: justify;
+}
+
+#membres td{
+ padding-right: 10px;
+}
+
+#entete{
+   width:100%;
+   float: left;
+}
+
+#entete img {
+   border: 0;
+   float: right;
+   width: 96px;
+   height: 96px;
+}
+
+.liens {
+   border-left: 1px solid;
+   margin: .7em 0em;
+   padding: .5em;
+   max-width: 12em;
+   float: left;
+}
+
+#pied_de_page{
+   float: left;
+   padding-top: 10px;
+}
