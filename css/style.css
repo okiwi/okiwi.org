@@ -1,0 +1,84 @@
+﻿html {
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+}
+
+body {
+    background-color: #f4f4f4 !important;
+}
+
+#social{
+    padding-top: 5px;
+}
+#social a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#social span {
+    display: none;
+}
+
+#social a.twitter{
+    background: url("../img/social/social_icon_twitter.png") no-repeat;
+}
+
+#social a.twitter:hover{
+    background: url("../img/social/social_icon_twitter_ro.png") no-repeat;
+}
+
+#social a.googleplus {
+    background: url("../img/social/social_icon_g+.png") no-repeat;
+}
+
+#social a.googleplus:hover {
+    background: url("../img/social/social_icon_g+_ro.png") no-repeat;
+}
+
+.breadcrumbs{
+    border: none;
+    background-color: inherit;
+}
+#title img{
+    vertical-align:middle;
+    float: left;
+    margin-right: 5px;
+}
+#title h3{
+    margin-bottom: 0px;
+}
+
+#menu{
+    padding-top: 30px;
+}
+
+
+#menu a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#menu .current a, #menu a:hover{
+    color: #2ba6cb;
+}
+
+#container{
+    margin-top: 50px;
+}
+
+#memo{
+    padding-top: 80px;
+    color:#999;
+}
+
+#footer{
+    margin-top: 50px;
+}
+#footer p{
+    font-size: 12px;
+    text-decoration: none;
+}

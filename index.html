@@ -1,59 +1,91 @@
-<!doctype html>
-<html>
-<head>
-   <title>Okiwi</title>
-   <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-   <meta name="description" content="L'association Okiwi est une communauté de praticiens en informatique située à Bordeaux. Nos buts principaux sont le partage d'expérience, le co-apprentissage, et l'initiation de projets libres et utiles à tous." />
-   <meta name="keywords" content="okiwi, association, logiciel, libre, informatique, bordeaux, ateliers, coding dojo, programmation, communauté, agile" />
-   <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Site de l'association Okiwi</title>
 
-   <div id="entete">
-      <img src="okiwi.png" alt="Logo Okiwi" />
-      <h1>Association Okiwi</h1>
-      <h3 id="slogan">Catalyseur d'évènements informatiques</h3>
+        <meta charset="utf-8" />
+        <meta name="description" content="Le site d'Okiwi Catalyseur d'évènements informatiques sur Bordeaux">
+        <meta name="author" content="okiwi">
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <div class="liens">
-         <a href="http://www.google.com/calendar/embed?src=emrdkvvu6iuqkp6g2etjp5295g%40group.calendar.google.com&ctz=Europe/Paris">Agenda</a><br>
-         <a href="http://www.okiwi.org/blogs/">Blogs</a><br>
-         <a href="http://groups.google.fr/group/okiwi">Discussions</a><br>
-         <a href="https://github.com/organizations/okiwi">Github</a><br>
+        <link rel="stylesheet" href="css/normalise.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+         
+
+      <header class="row">
+         <div id="title" class="large-5 columns text-center">
+            <img src="img/okiwi.png" alt="okiwi logo" style="width:64px; height:64px;" /> 
+            <h3>Association Okiwi</h3>
+            <h5 class="subheader">Catalyseur d'évènements informatiques</h5>
+         </div>
+
+         <div id="menu" class="large-6 columns left">
+             <ul class="inline-list right">
+                 <li class="current"><a href="#">Accueil</a></li>
+                 <li><a href="#">Agenda</a></li>
+                 <li><a href="#">L'association</a></li>
+                 <li><a href="#">Discussions</a></li>
+                 <li><a href="#">Evènements</a></li>
+             </ul>
+         </div>
+
+          <div id="social" class="large-1 columns">
+              <a href="http://twitter.com/okiwi_fr" class="twitter"><span>Twitter</span></a>
+              <a href="https://plus.google.com/u/0/events/cqotp15cf2eso0rr8gc0uit8mak/101137288862468153673" class="googleplus"><span>Google +</span></a>
+          </div>
+      </header>
+
+      <div id="container" class="row">
+          <div class="large-8 columns right text-justify">
+              <h3>Qu'est ce que Okiwi?</h3>
+              <hr>
+              <p>
+                  Okiwi est une communauté ouverte de praticiens en informatique située à Bordeaux.
+                  Ouverte parce que nous ne donnons pas de limite à notre curiosité.
+                  L’activité de l’association dépendra de ce que chacun y apportera.
+                  <br>
+                  Nous organisons entre autre:
+              </p>
+              <div class="row text-justify">
+                  <div class="large-6 columns">
+                      <p>Des <a href="#"><b>coding dojo</b></a>,
+                      sessions amusantes et intenses pendant lesquelles des développeurs améliorent leurs compétences en programmation.</p>
+                  </div>
+
+                  <div class="large-6 columns">
+                      <p>Des <a href="#"><b>ateliers</b></a> divers et variés, sur l'agilité, la communication, ...</p>
+                  </div>
+              </div>
+              <div class="row text-left">
+                  <div class="large-6 columns">
+                      <p>L'<a href="#"><b>Agile Tour Bordeaux</b></a> depuis maintenant 4 ans.</p>
+                  </div>
+
+                  <div class="large-6 columns">
+                      <p>Le<a href="#"><b> global day of code retreat</b></a> et bien d'autres ateliers techniques</p>
+                  </div>
+              </div>
+          </div>
+          <div id="memo" class="large-4 columns left text-justify">
+            <p> Okiwi existe depuis 4 ans. La communauté décide de contribuer bénévolement au développement de l'association, en y consacrant du temps et de l'energie.
+                De ce fait, l'ensemble des activités de l'association sont gratuites, et aucune cotisation n’est nécessaire pour y participer.
+                <br>Néanmoins il est possible de soutenir l'association et d'adhérer pour devenir membre cotisant.
+            </p>
+            <a href="#" class="success label">Faire un don ou devenir membre cotisant</a>
+          </div>
       </div>
+      <div class="row">
+          <div id="footer" class="large-12 columns text-center">
 
-      <div class="liens">
-         <a href="bureau_et_membres.html">Bureau et membres</a><br>
-         <a href="dons_et_cotisation.html">Dons et cotisation</a><br>
-         <a href="status.html">Les statuts</a><br>
+          <p>Le site <a href="http://okiwi.org">okiwi.org</a> ainsi que le <a href="https://github.com/okiwi">code</a> produit par Okiwi est sous licence WTFPL
+          (<b>Do What the Fuck You Want to Public License</b>)
+          </p>
+          </div>
       </div>
-
-      <div class="liens">
-         <a href="http://agiletourbordeaux.okiwi.org/">Agile Tour Bordeaux</a><br>
-         <a href="coding_dojo.html">Coding dojo</a><br>
-         <a href="http://communaute.okiwi.org/">Social</a><br>
-      </div>
-   </div>
-
-
-   <div id="corp_de_page">
-      <p><em>Okiwi</em> est une communauté <em>ouverte</em> de praticiens en informatique située à Bordeaux.<br>
-      Ouverte parce que nous ne donnons pas de limite à notre curiosité.<br>
-      L’activité de l’association dépendra de ce que chacun y apportera.<br>
-      <br>
-      Nous apprécions particulièrement le partage d’expériences et de connaissances, l’organisation d’ateliers et de conférences…<br>
-      <br>
-      <span style="float: right"><em>...et toute initiative surprenante !</em></span>
-      </p>   
-   </div>
-
-   <div id="pied_de_page">
-      <a href="http://flattr.com/thing/566741/okiwi" target="_blank">
-      <img src="flattr-badge-large.png" alt="Flattr Okiwi" border="0" />
-      </a>
-      <a href="https://twitter.com/okiwi_fr" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @okiwi_fr</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-   </div>
-
-
-</body>
+    </body>
 </html>
