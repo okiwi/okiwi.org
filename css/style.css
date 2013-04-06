@@ -116,7 +116,7 @@ header{
     color: black;
 }
 
-#menu a:hover{
+#menu a:hover,#menu .current{
     color: #2BA6CB !important;
     border-bottom: 1px solid #2BA6CB;
 }
