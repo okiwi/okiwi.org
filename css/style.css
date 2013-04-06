@@ -1,77 +1,170 @@
-﻿html {
-    overflow-y: scroll;
-    overflow: -moz-scrollbars-vertical;
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    height: 100%;
+
 }
 
 body {
+    font-size: 1em;
+    line-height: 1.4;
     background-color: #f4f4f4 !important;
 }
 
-#social{
-    padding-top: 5px;
-}
-#social a {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-top: 10px;
-    margin-left: 15px;
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
-#social span {
-    display: none;
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
-#social a.twitter{
-    background: url("../img/social/social_icon_twitter.png") no-repeat;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-#social a.twitter:hover{
-    background: url("../img/social/social_icon_twitter_ro.png") no-repeat;
+img {
+    vertical-align: middle;
 }
 
-#social a.googleplus {
-    background: url("../img/social/social_icon_g+.png") no-repeat;
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-#social a.googleplus:hover {
-    background: url("../img/social/social_icon_g+_ro.png") no-repeat;
+textarea {
+    resize: vertical;
 }
 
-.breadcrumbs{
-    border: none;
-    background-color: inherit;
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
-#title img{
-    vertical-align:middle;
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header{
+    height: 80px;
+    background-color: #f4f4f4;
+}
+
+#header_container{
+    height: 100%;
+}
+
+#title{
     float: left;
-    margin-right: 5px;
+    width: 430px;
+    margin-left: -100%;
+    height: 100%;
 }
+
+#title img{
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+
 #title h3{
-    margin-bottom: 0px;
+    margin-bottom: 0;
+}
+
+
+#menu_container{
+    float: left;
+    width: 100%;
+    height:100%;
 }
 
 #menu{
-    padding-top: 30px;
+    margin: 0 50px 0 430px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+    padding-top: 20px;
 }
 
+#menu ul{
+    width:100%;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+}
+
+#menu li{
+    display:inline-block;
+    margin-right:10px;
+}
 
 #menu a{
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: black;
 }
 
-#menu .current a, #menu a:hover{
-    color: #2ba6cb;
+#menu a:hover{
+    color: #2BA6CB !important;
+    border-bottom: 1px solid #2BA6CB;
 }
 
-#container{
+#social a{
+    color: #6f6f6f;
+}
+
+#social .foundicon-twitter:hover{
+    color: #2BA6CB;
+}
+#social .foundicon-google-plus:hover{
+    color: #dd4b39;
+}
+#social .foundicon-github:hover{
+    color: #000000;
+}
+
+
+
+#social{
+    float: left;
+    width: 50px;
+    margin-left: -50px;
+    height:100%;
+    min-width: 50px;
+    overflow: hidden;
+}
+
+#social ul{
+    width:100%;
+    text-align: right;
+    height: 100%;
+}
+#social li{
+    list-style: none;
+}
+
+#menu i{
+    font-size: 20px;
+}
+
+#alert_container{
     margin-top: 50px;
+    display: none;
 }
 
 #memo{
-    padding-top: 80px;
+    padding-top: 77px;
     color:#999;
 }
 
@@ -81,4 +174,347 @@ body {
 #footer p{
     font-size: 12px;
     text-decoration: none;
+}
+
+#alert_container a{
+    color: #000000;
+    font-weight: bold;
+    float:right;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 765px) {
+
+    #title{
+        float: left;
+        width: 300px;
+        height: 100%;
+        text-align: center;
+    }
+
+    #title img{
+        margin-right: 0px;
+    }
+
+    #title h3{
+        margin-top: 16px;
+        font-size: 1em;
+    }
+
+    #title h5{
+        font-size: 0.8em;
+    }
+    #memo{
+padding-top: 0px;
+    }
+    #alert_container a{
+     float:none;
+    }
+}
+@media only screen and (max-width: 978px) {
+
+
+    #menu_container{
+        margin-top: 80px;
+    }
+
+    #menu{
+        margin: 0;
+        padding-top: 0;
+    }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+                                      Fonts
+   ========================================================================== */
+/* font-face */
+@font-face {
+    font-family: "SocialFoundicons";
+    src: url("../fonts/social_foundicons.eot");
+    src: url("../fonts/social_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/social_foundicons.woff") format("woff"), url("../fonts/social_foundicons.ttf") format("truetype"), url("../fonts/social_foundicons.svg#SocialFoundicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global foundicon styles */
+[class*="foundicon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+    font-family: "SocialFoundicons";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+}
+
+/* icons */
+.foundicon-thumb-up:before {
+    content: "\f000";
+}
+
+.foundicon-thumb-down:before {
+    content: "\f001";
+}
+
+.foundicon-rss:before {
+    content: "\f002";
+}
+
+.foundicon-facebook:before {
+    content: "\f003";
+}
+
+.foundicon-twitter:before {
+    content: "\f004";
+}
+
+.foundicon-pinterest:before {
+    content: "\f005";
+}
+
+.foundicon-github:before {
+    content: "\f006";
+}
+
+.foundicon-path:before {
+    content: "\f007";
+}
+
+.foundicon-linkedin:before {
+    content: "\f008";
+}
+
+.foundicon-dribbble:before {
+    content: "\f009";
+}
+
+.foundicon-stumble-upon:before {
+    content: "\f00a";
+}
+
+.foundicon-behance:before {
+    content: "\f00b";
+}
+
+.foundicon-reddit:before {
+    content: "\f00c";
+}
+
+.foundicon-google-plus:before {
+    content: "\f00d";
+}
+
+.foundicon-youtube:before {
+    content: "\f00e";
+}
+
+.foundicon-vimeo:before {
+    content: "\f00f";
+}
+
+.foundicon-flickr:before {
+    content: "\f010";
+}
+
+.foundicon-slideshare:before {
+    content: "\f011";
+}
+
+.foundicon-picassa:before {
+    content: "\f012";
+}
+
+.foundicon-skype:before {
+    content: "\f013";
+}
+
+.foundicon-steam:before {
+    content: "\f014";
+}
+
+.foundicon-instagram:before {
+    content: "\f015";
+}
+
+.foundicon-foursquare:before {
+    content: "\f016";
+}
+
+.foundicon-delicious:before {
+    content: "\f017";
+}
+
+.foundicon-chat:before {
+    content: "\f018";
+}
+
+.foundicon-torso:before {
+    content: "\f019";
+}
+
+.foundicon-tumblr:before {
+    content: "\f01a";
+}
+
+.foundicon-video-chat:before {
+    content: "\f01b";
+}
+
+.foundicon-digg:before {
+    content: "\f01c";
+}
+
+.foundicon-wordpress:before {
+    content: "\f01d";
 }
