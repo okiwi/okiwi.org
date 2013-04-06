@@ -27,9 +27,9 @@
                 <div id="menu">
                     <ul>
                         <li><a href="https://www.google.com/calendar/embed?src=emrdkvvu6iuqkp6g2etjp5295g@group.calendar.google.com">Agenda</a></li>
-                        <li><a href="#">L'association</a></li>
+                        <li><a href="association.html">L'association</a></li>
                         <li><a href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/okiwi">Discussions</a></li>
-                        <li><a href="#">Evènements</a></li>
+                        <li><a href="evenements.html">Evènements</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +92,7 @@
               </div>
               <div class="row text-left">
                   <div class="large-6 columns">
-                      <p>L'<a href="#"><b>Agile Tour Bordeaux</b></a> depuis maintenant 4 ans.</p>
+                      <p>L'<a href="http://agiletourbordeaux.okiwi.org/"><b>Agile Tour Bordeaux</b></a> depuis maintenant 4 ans.</p>
                   </div>
 
                   <div class="large-6 columns">
@@ -105,7 +105,7 @@
                 De ce fait, l'ensemble des activités de l'association sont gratuites, et aucune cotisation n’est nécessaire pour y participer.
                 <br>Néanmoins il est possible de soutenir l'association et d'adhérer pour devenir membre cotisant.
             </p>
-            <a href="#" class="success label">Faire un don ou devenir membre cotisant</a>
+            <a href="dons_et_cotisation.html" class="success label">Faire un don ou devenir membre cotisant</a>
           </div>
       </div>
       <div class="row">
@@ -121,13 +121,19 @@
 
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
+    $("#title").click(
+            function(){window.location = "/";}
+    );
+</script>
+<script>
     function get_date_string_format(startDate, endDate) {
         var month_names = new Array("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre");
-
-        var curr_date = startDate.getDate();
-        var curr_month = month_names[startDate.getMonth()]; //Months are zero based
-        var curr_year = startDate.getFullYear();
-        return curr_date + " " + curr_month + " " + curr_year
+        var day_names = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+        var date = startDate.getDate();
+        var day = day_names[startDate.getDay()];
+        var month = month_names[startDate.getMonth()]; //Months are zero based
+        var year = startDate.getFullYear();
+        return day + " " + date + " " + month + " " + year
                 + " de " + startDate.getHours() +"h"+startDate.getMinutes()
                 + " à " + endDate.getHours() +"h"+endDate.getMinutes();
     }
@@ -154,7 +160,7 @@
             var date_string = get_date_string_format(startTime, endTime);
             var link = get_url(event.link);
 
-            $('#futur_event').text("Prochain évènement: " + title + " le " + date_string);
+            $('#futur_event').text("Prochain évènement: " + title + ", le " + date_string);
             $("#futur_event_url").attr("href", link);
             $('#alert_container').css("display", "block");
         },
