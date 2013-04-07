@@ -45,7 +45,15 @@
     "membres_cotisants":[
         {
             "nom": "Cranford",
-            "prénom": "Sam"
+            "prénom": "SaCranfordm"
+        },
+        {
+            "nom": "Heral",
+            "prénom": "Christophe"
+        },
+        {
+            "nom": "Bousquié",
+            "prénom": "Pierre"
         }
     ]
 }
