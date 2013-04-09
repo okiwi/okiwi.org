@@ -54,6 +54,14 @@
         {
             "nom": "Bousquié",
             "prénom": "Pierre"
+        },
+        {
+            "nom": "Grange",
+            "prénom": "Pascal"
+        },
+        {
+            "nom": "Vincent",
+            "prénom": "Guillaume"
         }
     ]
 }
