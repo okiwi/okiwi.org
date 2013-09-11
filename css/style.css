@@ -58,173 +58,186 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header{
+header {
     height: 80px;
     background-color: #f4f4f4;
 }
 
-#header_container{
+#header_container {
     height: 100%;
 }
 
-#title:hover{cursor: pointer;}
-#title{
+#title:hover {
+    cursor: pointer;
+}
+
+#title {
     float: left;
     width: 430px;
     margin-left: -100%;
     height: 100%;
 }
 
-#title img{
+#title img {
     float: left;
     width: 64px;
     height: 64px;
     margin-right: 10px;
 }
 
-#title h3{
+#title h3 {
     margin-bottom: 0;
 }
 
-
-#menu_container{
+#menu_container {
     float: left;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-#menu{
+#menu {
     margin: 0 50px 0 430px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
     padding-top: 20px;
 }
 
-#menu ul{
-    width:100%;
+#menu ul {
+    width: 100%;
     text-align: center;
     height: 100%;
     padding-top: 10px;
 }
 
-#menu li{
-    display:inline-block;
-    margin-right:10px;
+#menu li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-#menu a{
+#menu a {
     font-size: 14px;
     text-transform: uppercase;
     color: black;
 }
 
-#menu a:hover,#menu .current{
+#menu a:hover, #menu .current {
     color: #2BA6CB !important;
     border-bottom: 1px solid #2BA6CB;
 }
 
-#social a{
+#social a {
     color: #6f6f6f;
 }
 
-#social .foundicon-twitter:hover{
+#social .foundicon-twitter:hover {
     color: #2BA6CB;
 }
-#social .foundicon-google-plus:hover{
+
+#social .foundicon-google-plus:hover {
     color: #dd4b39;
 }
-#social .foundicon-github:hover{
+
+#social .foundicon-github:hover {
     color: #000000;
 }
 
-
-
-#social{
+#social {
     float: left;
     width: 50px;
     margin-left: -50px;
-    height:100%;
+    height: 100%;
     min-width: 50px;
     overflow: hidden;
 }
 
-#social ul{
-    width:100%;
+#social ul {
+    width: 100%;
     text-align: right;
     height: 100%;
 }
-#social li{
+
+#social li {
     list-style: none;
 }
 
-#menu i{
+#menu i {
     font-size: 20px;
 }
 
-#alert_container{
+#alert_container {
     margin-top: 50px;
     display: none;
 }
 
-#memo{
+#memo {
     padding-top: 77px;
-    color:#999;
+    color: #999;
 }
 
-#footer{
+#footer {
     margin-top: 50px;
 }
-#footer p{
+
+#footer p {
     font-size: 12px;
     text-decoration: none;
 }
 
-#alert_container a{
+#alert_container a {
     color: #000000;
     font-weight: bold;
-    float:right;
+    float: right;
 }
 
+#bloc_geek_camp a {
+    color: #000000;
+    font-weight: bold;
+    float: right;
+}
 
-#don{margin-top: 10px;}
+#don {
+    margin-top: 10px;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 765px) {
 
-    #title{
+    #title {
         float: left;
         width: 300px;
         height: 100%;
         text-align: center;
     }
 
-    #title img{
+    #title img {
         margin-right: 0px;
     }
 
-    #title h3{
+    #title h3 {
         margin-top: 16px;
         font-size: 1em;
     }
 
-    #title h5{
+    #title h5 {
         font-size: 0.8em;
     }
-    #memo{
-padding-top: 0px;
+
+    #memo {
+        padding-top: 0px;
     }
-    #alert_container a{
-     float:none;
+
+    #alert_container a {
+        float: none;
     }
 }
+
 @media only screen and (max-width: 978px) {
 
-
-    #menu_container{
+    #menu_container {
         margin-top: 80px;
     }
 
-    #menu{
+    #menu {
         margin: 0;
         padding-top: 0;
     }
@@ -232,9 +245,9 @@ padding-top: 0px;
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
 
 }
 
