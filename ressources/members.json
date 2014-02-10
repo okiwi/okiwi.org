@@ -42,7 +42,7 @@
         }
     ],
     "date_assemblée_générale": "Fri Apr 26 2013 20:00:00 GMT+0200 (CEST)",
-    "membres_cotisants":[
+    "membres_cotisants": [
         {
             "nom": "Cranford",
             "prénom": "Sam"
@@ -78,6 +78,18 @@
         {
             "nom": "Mouton",
             "prénom": "David"
+        },
+        {
+            "nom": "Li",
+            "prénom": "Zhe"
+        },
+        {
+            "nom": "Piac",
+            "prénom": "Michel"
+        },
+        {
+            "nom": "Varron",
+            "prénom": "Damien"
         }
     ]
 }
