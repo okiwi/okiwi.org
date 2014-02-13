@@ -1,0 +1,104 @@
+---
+layout: default
+title: Dons et cotisations
+---
+
+<div class="row">
+    <div class="col-lg-4">
+        <h2>Etat des finances</h2>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                 aria-valuemax="100" style="width: {{site.data.okiwi.pourcentage_cotisations}}%">
+                <span class="sr-only">{{site.data.okiwi.pourcentage_cotisations}}% Complete (success)</span>
+                {{site.data.okiwi.montant_dons}}€ / {{site.data.okiwi.montant_frais_fixes}}€
+            </div>
+        </div>
+        <p>Les {{site.data.okiwi.montant_frais_fixes}}€ correspondent aux frais fixes de l'année
+            {{site.data.okiwi.annee_precedente}} </p>
+
+        <h2>Devenir membre</h2>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="P9FNLXH9S5KUW">
+
+            <div class="form-group">
+                <select name="os0" class="form-control">
+                    <option value="à partir de">à partir de €10,00 EUR</option>
+                    <option value="autre montant">autre montant €20,00 EUR</option>
+                    <option value="dernier montant">autre montant €50,00 EUR</option>
+                </select>
+            </div>
+            <input type="hidden" name="currency_code" value="EUR">
+            <input type="submit" class="btn btn-success" name="submit" alt="Devenir membre cotisant en ligne!"
+                   value="Devenir membre cotisant en ligne"/>
+        </form>
+        <br/>
+
+        <p>ou par courrier à:</p>
+        <address>
+            <strong>Association Okiwi</strong><br>
+            34 Rue de Preignac <br>
+            33800 Bordeaux
+        </address>
+
+        <h2>Faire un don</h2>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="form-group">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="TPYAFNHNYEMWA">
+                        <input style="width: 37px; height: 23px; " type="image"
+                               src="https://www.paypal.com//fr_FR/i/logo/PayPal_mark_37x23.gif" border="0" name="submit"
+                               alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1"
+                             height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <script id='fbfjdya'>(function (i) {
+                    var f, s = document.getElementById(i);
+                    f = document.createElement('iframe');
+                    f.src = '//api.flattr.com/button/view/?uid=okiwi&button=compact&url=' + encodeURIComponent(document.URL);
+                    f.title = 'Flattr';
+                    f.height = 20;
+                    f.width = 110;
+                    f.style.borderWidth = 0;
+                    s.parentNode.insertBefore(f, s);
+                })('fbfjdya');</script>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>A quoi servent les dons et les cotisations?</h2>
+
+                <p> Les dons et les cotisations permettent à Okiwi dans un premier temps de payer ses frais fixes
+                    comme:</p>
+                <ul>
+                    <li>l'assurance responsabilité civile qui nous permet d'organiser autant d'évènements que nous
+                        souhaitons
+                    </li>
+                    <li>le nom de domaine okiwi.org</li>
+                    <li>le serveur mail</li>
+                </ul>
+                <p>Ils permettent aussi à Okiwi de rendre l'ensemble des évènements gratuits ! </p>
+
+                <p>
+                    En {{site.data.okiwi.annee_precedente}} le Global Day of Code Retreat, le Geek Camp, l'Agile Tour
+                    Bordeaux et tous les évènements organisés par Okiwi ont été gratuits.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

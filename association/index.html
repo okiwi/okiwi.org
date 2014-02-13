@@ -1,0 +1,297 @@
+---
+layout: default
+title: L'association
+---
+<div class="row">
+    <div class="col-lg-12">
+        <h1>L'association</h1>
+
+        <p>
+            Okiwi existe depuis {{site.data.okiwi.age}} ans. La communauté décide de contribuer bénévolement au développement de
+            l'association, en
+            y consacrant du temps et de l'energie. Suite à l’Assemblée Générale du {{site.data.okiwi.date_lisible}}, les membres élus au
+            bureau de l'association Okiwi et les membres cotisants sont :</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+
+        <table class="table table-condensed text-center">
+            <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Fonction</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for member in site.data.okiwi.bureau %}
+            <tr>
+                <td>{{ member.prenom }}</td>
+                <td>{{ member.nom }}</td>
+                <td>{{ member.fonction }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-lg-6">
+
+        <table class="table table-condensed text-center">
+            <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Fonction</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for member in site.data.okiwi.membres_cotisants %}
+            <tr>
+                <td>{{ member.prenom }}</td>
+                <td>{{ member.nom }}</td>
+                <td>membre</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 text-right">
+        <a href="/dons_et_cotisations/" class="btn btn-success">Devenir membre</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Les status de l'association</h1>
+
+        <h2>Article I – Dénomination, durée et sièges</h2>
+
+        <p>
+            Il est fondé ce dimanche 15 janvier 2006 à Bordeaux (Gironde), entre les adhérents aux présents statuts, une
+            association régie par la loi du 1er juillet 1901 et le décret du 16 août 1901, ayant pour titre : Okiwi
+            <br>
+            La durée de l’association est illimitée.
+            <br>
+            Le siège de l’association est fixé à Bordeaux. Le conseil d’administration a le choix de l’immeuble où le
+            siège est établi et peut le transférer dans la même ville par simple décision.
+        </p>
+
+        <h2>Article II – Les buts</h2>
+
+        <p>
+            Okiwi est un lieu pour partager nos expériences, nos connaissances, pour l’enrichissement de chacun, en
+            espérant qu’en émergent des projets libres et utiles à tous.
+            <br>
+            L’association se réserve le droit d’utiliser tous les moyens utiles et nécessaires au développement de son
+            activité, dans les limites de celles prévues par la législation en vigueur et par la loi de 1901.
+        </p>
+
+        <h2>Article III – Les membres</h2>
+
+        <p>
+            L’association Okiwi se compose de:
+            <br>
+        </p>
+        <ul>
+            <li>membre fondateur: personne ayant participé à la création de l’association et reconnue à ce titre au sein
+                et par vote en assemblée générale
+            </li>
+            <li>membre d’honneur: personne ayant activement participé à la vie de l’association et reconnue à ce titre
+                au sein et par vote en assemblée générale, sur proposition du conseil d’administration
+            </li>
+            <li>membre actif adhérent: personne participant activement à la vie de l’association, ayant adhéré à ce
+                titre pour l’année en cours, et à jour du paiement de son adhésion en date de l’assemblée générale
+            </li>
+            <li>membre adhérent: personne physique ou morale ayant adhéré à ce titre pour l’année en cours, et à jour du
+                paiement de son adhésion en date de l’assemblée générale
+            </li>
+            <li>membre bienfaiteur: personne cotisant pour soutenir les activités de l’association dans son ensemble ou
+                une action particulière de celle-ci
+            </li>
+            <li>membre salarié(d’honneur, actif, ou adhérent): personne étant employé au sein de
+                l’association(intermittent ou permanent en CDD ou CDI) et ayant par ailleurs une activité militante au
+                sein de la structure
+            </li>
+        </ul>
+
+        Qualité et spécificité des membres: pour être membre il faut être majeur(ou fournir une autorisation écrite des
+        parents), jouir de ses droits civiques, être présenté par au moins un membre de l’association et agréé par le
+        conseil d’administration.
+        <br>
+        Les adhésions et cotisations d’activités des membres actifs, adhérents et bienfaiteurs sont déterminés
+        annuellement en assemblée générale.
+        Le cas échéant et en cas de besoin le bureau de l’association pourra les modifier en cours d’année sans que ces
+        modifications puissent être rétroactives; le bureau devra dans ce cas justifier sa décision auprès de
+        l’assemblée générale suivante.
+        <br>
+        Les membres fondateurs et d’honneurs sont exonérés d’adhésion à vie sauf en cas de radiations pour motif grave.
+        <p></p>
+
+        <h2>Article IV – Condition de perte de la qualité de membre</h2>
+
+        <p>
+            La qualité de membre se perd par:
+        </p>
+        <ul>
+            <li>la démission: transcrite par écrit, datée et signée.Elle pourra être remise en main propres à un membre
+                du bureau ou envoyée au siège de l’association.
+            </li>
+            <li>la radiation: pour motif grave, suite à une décision de la présidence, du bureau ou du conseil
+                d’administration. Celle-ci prend effet en date de notification mais peut être dénoncée, le cas échéant
+                lors de l’assemblée générale ou extraordinaire suivante. Dans tous les cas l’interessé sera convié à
+                défendre son point de vue et ces décisions.
+            </li>
+        </ul>
+        <p></p>
+
+        <h2>Article V – Ressources</h2>
+
+        <p>
+            Les ressources de l’association comprennent:
+        </p>
+        <ul>
+            <li>le montant des cotisations</li>
+            <li>les subventions de l’Europe, de l’État, des Régions, des Départements, des Communes et de leurs
+                établissements publics et de tout organisme habilité à soutenir l’action de l’Association
+            </li>
+            <li>le versement de fonds par des organismes appropriés dans le cadre de projets culturels ou de mécénat («
+                sponsors »)
+            </li>
+            <li>les dons manuels</li>
+            <li>les sommes perçues en contrepartie de prestations fournies</li>
+        </ul>
+        <p></p>
+
+        <h2>Article VI – Conseil d’administration</h2>
+
+        <p>
+            L’association est administré par un conseil composé au plus de quinze membres, élus par scrutin pour dix
+            huit mois par assemblée générale, et choisis parmi les membres actifs dont se compose l’association.
+            <br>
+            En cas de perte de la qualité de membre de l’un ou plusieurs des membres du conseil, le conseil pourvoit
+            provisoirement au remplacement de ses membres.
+            Il est procédé à leur remplacement par la plus prochaine assemblée générale
+            Les pouvoirs des membres ainsi élus prennent fin à l’époque où devrait normalement expirer les mandats des
+            membres remplacés.
+            <br>
+            Le conseil choisit parmi ses membres, par scrutin, un bureau composé de
+        </p>
+        <ul>
+            <li>un président</li>
+            <li>un secrétaire</li>
+            <li>un trésorier</li>
+            <li>éventuellement un vice-président, trésorier-adjoint et secrétaire-adjoint</li>
+        </ul>
+        Le renouvellement du conseil a lieu par tiers, suivant la durée du mandat.
+        <br>
+        Les membres sortants sont rééligibles.
+        Le bureau est élu pour un an.
+        <p></p>
+
+        <h2>Article VII – Réunion du conseil d’administration</h2>
+
+        <p>
+            Le conseil se réunit au moins une fois par an, et chaque fois qu’il est convoqué par son président,ou sur la
+            demande du tiers de ses membres.
+            <br>
+            La présence de sept des membres du conseil d’administration est nécessaire pour la validité des
+            délibérations.
+            Les décisions sont prises par la majorité des voix; en cas de partage la voix du président est
+            prépondérante.
+            <br>
+            Il est tenu un procès-verbal des séances.
+            Les procès-verbaux sont rédigés par le président ou secrétaire et enregistrés dans un registre papiers ou
+            informatiques.
+            <br>
+            Tout membre du conseil qui sans excuse n’aura pas assisté à trois réunions successives pourra être considéré
+            comme démissionnaire.
+            <br>
+            Nul ne peut faire partie du conseil s’il n’est pas majeur.
+        </p>
+
+        <h2>Article VIII</h2>
+
+        <p>
+            Les membres de l’association ne peuvent recevoir aucune rétribution à raison des fonctions qui leurs sont
+            confiées
+        </p>
+
+        <h2>Article IX – Assemblée générale</h2>
+
+        <p>
+            L’assemblée générale de l’association comprend les membres actifs, fondateurs, et d’honneurs.
+            La présence de la moitié ds membres actifs est nécessaire pour la validité des délibérations.
+            Elle se réunit 2 fois par an et chaque fois qu’elle est convoquée par le conseil d’administration ou sur la
+            demande du quart au moins de ses membres.
+            <br>
+            Les convocations sont envoyées au moins quinze jours à l’avance et indique l’ordre du jour.
+            <br>
+            Son bureau est celui du conseil.
+            <br>
+            Elle entend les rapports sur la gestion du conseil d’administration, sur la situation financière et morale
+            de l’association.
+            Elle approuve les comptes de l’exercice clos, vote le budget de l’exercice suivant, délibère sur les
+            questions mises à l’ordre du jour et pourvoit, s’il y a lieu, au renouvellement des membres du conseil
+            d’administration.
+            <br>
+            Le rapport annuel et les comptes sont mis à disposition de tous les membres de l’association.
+        </p>
+
+        <h2>Article X – Assemblée générale extraordinaire</h2>
+
+        <p>
+            Si besoin est, ou sur la demande de la moitié plus un des membres inscrits, le président peut convoquer une
+            assemblée générale extraordinaire, suivant les formalités prévues par l’article précédent.
+        </p>
+        <h2>Article XI</h2>
+
+        <p>
+            Les dépenses sont ordonnancées par le président. L’association est représentée en justice et dans tous les
+            actes de la vie civile par le président du bureau.
+            Le représentant de l’association doit jouir du plein exercice de ses droits civiques.
+        </p>
+
+        <h2>Article XII</h2>
+
+        <p>
+            Il est tenu à jour une comptabilité-deniers par recettes et par dépenses et, s’il y a lieu, une
+            compatibilité-matières.
+            Chaque établissement de l’association doit tenir une comptabilité distincte qui forme un chapitre spécial de
+            la comptabilité de l’association.
+        </p>
+
+        <h2>Article XIII – Règlement intérieur</h2>
+
+        <p>
+            Un règlement intérieur peut être établi par le conseil d’administration, qui le fait alors approuver par
+            l’assemblée générale.
+            Ce règlement éventuel est destiné à fixer les divers points non-prévus par les statuts, notamment ceux qui
+            ont trait à l’administration interne de l’association.
+        </p>
+
+        <h2>Article XIV</h2>
+
+        <p>
+            Le président doit faire connaître dans les trois mois à la Préfecture du département tous les changements
+            survenus dans l’administration ou la direction de l’association ainsi que toutes es modifications apportées
+            dans leurs statuts.
+        </p>
+
+        <h2>Article XV – Dissolution</h2>
+
+        <p>
+            La dissolution de l’association ne peut être prononcée que par assemblée générale convoquée spécialement à
+            cet effet.
+            L’assemblée générale désigne un ou plusieurs commissaires chargés de la liquidation des biens de
+            l’association.
+            Elle attribue l’actif net conformément à l’article de la loi du 1er juillet 1901 et au décret du 16 Août
+            1901. La dissolution doit faire l’objet d’une déclaration à la Préfecture du siège social.
+        </p>
+
+
+    </div>
+</div>

@@ -1,0 +1,101 @@
+---
+date_assemblee_generale: 2013-04-26T19:00:00+01:00
+
+date_lisible: 26 avril 2013
+
+membres_cotisants:
+    - nom: Cranford
+      prenom: Sam
+
+    - nom: Heral
+      prenom: Christophe
+
+    - nom: Bousquié
+      prenom: Pierre
+
+    - nom: Grange
+      prenom: Pascal
+
+    - nom: Vincent
+      prenom: Guillaume
+
+    - nom: Hanna
+      prenom: Samir
+
+    - nom: Garriga-Salaün
+      prenom: Colin
+
+    - nom: Kleber
+      prenom: Aldrik
+
+    - nom: Mouton
+      prenom: David
+
+    - nom: Li
+      prenom: Zhe
+
+    - nom: Piac
+      prenom: Michel
+
+    - nom: Varron
+      prenom: Damien
+
+    - nom: Guerin
+      prenom: Florian
+
+    - nom: Aimetti
+      prenom: Fabrice
+
+bureau:
+    - fonction: Héraut
+      nom: Dusseaut
+      prenom: Jean-Baptiste
+
+    - fonction: Vice-Secrétaire
+      nom: Billette
+      prenom: Millicent
+
+    - fonction: Vice-Trésorier
+      nom: Grange
+      prenom: Pascal
+
+    - fonction: Vice-Président
+      nom: Cranford
+      prenom: Sam
+
+    - fonction: Gérant de la communauté
+      nom: Bousquié
+      prenom: Pierre
+
+    - fonction: Secrétaire
+      nom: Hanna
+      prenom: Samir
+
+    - fonction: Trésorier
+      nom: Vincent
+      prenom: Guillaume
+
+    - fonction: Président
+      nom: Garriga-Salaün
+      prenom: Colin
+
+montant_dons: 190
+
+montant_frais_fixes: 250
+
+pourcentage_cotisations: 76
+
+age: 8
+
+annee_courante: 2014
+
+annee_precedente: 2013
+...
+
+
+
+
+
+
+
+
