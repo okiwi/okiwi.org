@@ -34,6 +34,8 @@ membres_cotisants:
     - nom: Ledard
       prenom: Arthur
 
+    - nom: Dumon
+      prenom: David
 
 bureau:
     - fonction: Président
@@ -49,11 +51,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 60
+montant_dons: 70
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 24
+pourcentage_cotisations: 28
 
 age: 8
 
