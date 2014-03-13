@@ -57,11 +57,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 90
+montant_dons: 100
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 36
+pourcentage_cotisations: 40
 
 age: 8
 
