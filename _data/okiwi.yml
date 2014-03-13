@@ -37,6 +37,12 @@ membres_cotisants:
     - nom: Dumon
       prenom: David
 
+    - nom: Hanna
+      prenom: Samir
+
+    - nom: Borde
+      prenom: Michael
+
 bureau:
     - fonction: Président
       nom: Cranford
@@ -51,11 +57,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 70
+montant_dons: 90
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 28
+pourcentage_cotisations: 36
 
 age: 8
 
