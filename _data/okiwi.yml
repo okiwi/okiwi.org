@@ -42,6 +42,9 @@ membres_cotisants:
 
     - nom: Borde
       prenom: Michael
+      
+    - nom: Heral
+      prenom: Christophe
 
 bureau:
     - fonction: Président
@@ -57,11 +60,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 100
+montant_dons: 110
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 40
+pourcentage_cotisations: 43
 
 age: 8
 
