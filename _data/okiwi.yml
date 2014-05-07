@@ -46,6 +46,12 @@ membres_cotisants:
     - nom: Heral
       prenom: Christophe
 
+    - nom: Cranford
+      prenom: Sam
+
+    - nom: Ruellan
+      prenom: Mickaël
+
 bureau:
     - fonction: Président
       nom: Cranford
