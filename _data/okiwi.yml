@@ -52,6 +52,9 @@ membres_cotisants:
     - nom: Ruellan
       prenom: Mickaël
 
+    - nom: Bousquié
+      prenom: Pierre
+
 bureau:
     - fonction: Président
       nom: Cranford
@@ -66,11 +69,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 130
+montant_dons: 150
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 52
+pourcentage_cotisations: 60
 
 age: 8
 
