@@ -54,7 +54,10 @@ membres_cotisants:
 
     - nom: Bousquié
       prenom: Pierre
-
+      
+    - nom: Dusseaut
+      prenom: Jean-Baptiste
+      
 bureau:
     - fonction: Président
       nom: Cranford
