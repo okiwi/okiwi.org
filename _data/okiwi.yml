@@ -54,7 +54,19 @@ membres_cotisants:
 
     - nom: Bousquié
       prenom: Pierre
-      
+
+    - nom: Geslin
+      prenom: Rudy
+
+    - nom: Viat
+      prenom: Florent
+
+    - nom: Kleber
+      prenom: Aldrik
+
+    - nom: André
+      prenom: Benjamin      
+
     - nom: Dusseaut
       prenom: Jean-Baptiste
       
