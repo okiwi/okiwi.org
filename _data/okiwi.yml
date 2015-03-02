@@ -1,7 +1,7 @@
 ---
-date_assemblee_generale: 2014-03-03T19:00:00+01:00
+date_assemblee_generale: 2015-03-02T19:00:00+01:00
 
-date_lisible: 03 mars 2014
+date_lisible: 02 mars 2015
 
 membres_cotisants:
     - nom: Varron
@@ -84,17 +84,17 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 150
+montant_dons: 0
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 60
+pourcentage_cotisations: 0
 
-age: 8
+age: 9
 
-annee_courante: 2014
+annee_courante: 2015
 
-annee_precedente: 2013
+annee_precedente: 2014
 ...
 
 
