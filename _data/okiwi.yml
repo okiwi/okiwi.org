@@ -4,71 +4,14 @@ date_assemblee_generale: 2015-03-02T19:00:00+01:00
 date_lisible: 02 mars 2015
 
 membres_cotisants:
-    - nom: Varron
-      prenom: Damien
-
-    - nom: Guerin
-      prenom: Florian
-
-    - nom: Aimetti
-      prenom: Fabrice
-
-    - nom: Faure
-      prenom: Frédéric
-
-    - nom: Gallay
-      prenom: Bastien
-
-    - nom: Monville
-      prenom: Alexis
-
-    - nom: Garriga-Salaün
-      prenom: Colin
-
-    - nom: Grange
-      prenom: Pascal
-
     - nom: Vincent
       prenom: Guillaume
 
-    - nom: Ledard
-      prenom: Arthur
-
-    - nom: Dumon
-      prenom: David
-
-    - nom: Hanna
-      prenom: Samir
-
-    - nom: Borde
-      prenom: Michael
-      
-    - nom: Heral
-      prenom: Christophe
-
-    - nom: Cranford
-      prenom: Sam
-
-    - nom: Ruellan
-      prenom: Mickaël
-
-    - nom: Bousquié
-      prenom: Pierre
-
-    - nom: Geslin
-      prenom: Rudy
-
-    - nom: Viat
-      prenom: Florent
-
-    - nom: Kleber
-      prenom: Aldrik
-
-    - nom: André
-      prenom: Benjamin      
-
     - nom: Dusseaut
       prenom: Jean-Baptiste
+
+    - nom: Auguste
+      prenom: Josselin
       
 bureau:
     - fonction: Président
@@ -84,11 +27,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 0
+montant_dons: 50
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 0
+pourcentage_cotisations: 20
 
 age: 9
 
