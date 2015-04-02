@@ -13,6 +13,9 @@ membres_cotisants:
     - nom: Auguste
       prenom: Josselin
       
+    - nom: Bousquié
+      prenom: Pierre
+      
 bureau:
     - fonction: Président
       nom: Cranford
