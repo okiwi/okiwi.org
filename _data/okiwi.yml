@@ -12,10 +12,13 @@ membres_cotisants:
 
     - nom: Auguste
       prenom: Josselin
-      
+
     - nom: Bousquié
       prenom: Pierre
-      
+
+    - nom: Rabiller
+      prenom: Sébastien
+ 
 bureau:
     - fonction: Président
       nom: Cranford
@@ -30,11 +33,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 50
+montant_dons: 80
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 20
+pourcentage_cotisations: 32
 
 age: 9
 
