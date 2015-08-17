@@ -18,6 +18,9 @@ membres_cotisants:
 
     - nom: Rabiller
       prenom: Sébastien
+      
+    - nom: Cranford
+      prenom: Sam
  
 bureau:
     - fonction: Président
@@ -33,11 +36,11 @@ bureau:
       prenom: Guillaume
 
 
-montant_dons: 80
+montant_dons: 90
 
 montant_frais_fixes: 250
 
-pourcentage_cotisations: 32
+pourcentage_cotisations: 36
 
 age: 9
 
