@@ -1,3 +1,14 @@
-name: Okiwi
-markdown: redcarpet
-highlighter: pygments
+# Site settings
+title: Association Okiwi
+email: contact@okiwi.org
+description: > # this means to ignore newlines until "baseurl:"
+  Okiwi est une communauté ouverte de praticiens en informatique située à Bordeaux.
+  Ouverte parce que nous ne donnons pas de limites à notre curiosité.
+  L’activité de l’association dépendra de ce que chacun y apportera.
+baseurl: "/"
+url: "http://okiwi.org"
+twitter_username: okiwi_fr
+github_username:  okiwi
+
+# Build settings
+markdown: kramdown

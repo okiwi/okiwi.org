@@ -6,7 +6,6 @@ Dépendances
 
  *  ruby 2.0
  *  jekyll 1.4.3 ou supérieur
- *  yuicompressor pour minifier CSS
 
 
 Installation
@@ -24,16 +23,7 @@ Lancer un serveur local
 
     git clone git@github.com:okiwi/okiwi.org.git
     cd okiwi.org
-    jekyll server --watch
+    jekyll serve
 
 
 Il suffit ensuite d'ouvrir son navigateur à l'adresse [http://localhost:4000/](http://localhost:4000/) 
-
-
-Minifier CSS
-------------
-
-Pour minifier le CSS j'utilise yuicompressor sur Webstorm avec la commande suivante :
-
-    /usr/local/bin/yuicompressor $FileName$ -o $FileNameWithoutExtension$.min.css
-

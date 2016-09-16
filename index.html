@@ -1,293 +1,254 @@
 ---
 layout: default
-title: Okiwi
 ---
 
-<div id="vitrine" class="row">
-    <div class="col-lg-12">
-        <div class="alert alert-success">
-            <strong><i class="fa fa-bullhorn fa-lg"></i> Prochain évènement&nbsp;:</strong><br/>
-            <i id="icone-chargement" class="fa fa-spinner fa-spin"></i>
-            <span id="message"></span>
-            <br/><a id="event_link">plus d'information</a>
-        </div>
+<style>
+    .bd-masthead {
+        position: relative;
+        padding: 3rem 15px 2rem;
+        color: white;
+        text-align: center;
+        background: url(images/clavier.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .bd-masthead h1 {
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    .bd-masthead .lead {
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .bd-masthead .btn {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    @media (min-width: 544px) {
+        .bd-masthead {
+            padding-top: 10rem;
+            padding-bottom: 4rem;
+        }
+
+        .bd-masthead .btn {
+            width: auto;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .bd-masthead {
+            padding-bottom: 6rem;
+        }
+
+        .bd-masthead h1 {
+            font-size: 4rem;
+        }
+
+        .bd-masthead .lead {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .bd-masthead .lead {
+            width: 85%;
+            font-size: 2rem;
+        }
+    }
+
+    .bd-featurette {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+        text-align: center;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    .bd-featurette .highlight {
+        text-align: left;
+    }
+
+    .bd-featurette .lead {
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    @media (min-width: 544px) {
+        .bd-featurette {
+            text-align: left;
+        }
+    }
+
+    .bd-featurette-title {
+        margin-bottom: .5rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #333;
+        text-align: center;
+    }
+
+    .bd-featurette h4 {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        font-weight: normal;
+        color: #333;
+    }
+
+    @media (min-width: 768px) {
+        .bd-featurette {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .bd-featurette-title {
+            font-size: 2.5rem;
+        }
+
+        .bd-featurette-title + .lead {
+            font-size: 1.5rem;
+        }
+
+        .bd-featurette .lead {
+            max-width: 80%;
+        }
+    }
+</style>
+<body class="bd-home">
+
+<main class="bd-masthead">
+    <div class="container">
+        <h1>Okiwi</h1>
+        <p class="lead">Catalyseur d'évènements informatiques sur Bordeaux</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="http://www.meetup.com/AgnosTech-Bordeaux/">
+                Voir les évènements
+            </a>
+        </p>
     </div>
-</div>
+</main>
 
-<div class="row">
-    <div class="col-lg-4">
-        <br/>
-        <br/>
+<div class="bd-featurette">
+    <div class="container">
+        <h2 class="bd-featurette-title">Qu'est ce qu'Okiwi&nbsp;?</h2>
+        <p class="lead">
+            Okiwi est une communauté ouverte de praticiens en informatique située à Bordeaux. Ouverte parce
+            que nous ne donnons pas de limites à notre curiosité. L’activité de l’association dépendra de ce que chacun
+            y apportera.
+            <br>
+            Nous organisons entre autre :
+        </p>
 
-        <div class="jumbotron text-center">
-            <p>
-                Okiwi existe depuis {{site.data.okiwi.age}} ans. La communauté décide de contribuer bénévolement au
-                développement de
-                l'association. De ce fait, l'ensemble des activités de l'association sont
-                <strong>gratuites</strong>.
-                Néanmoins il est possible de soutenir l'association et d'adhérer pour devenir membre cotisant. </p>
-
-            <p><a href="/dons_et_cotisations/" class="btn btn-success"><i class="fa fa-thumbs-up fa-lg"></i> Soutenir
-                Okiwi</a></p>
-        </div>
-    </div>
-    <div class="col-lg-8">
         <div class="row">
-            <div class="col-sm-12">
-
-                <div class="page-header">
-                    <h1>Qu'est ce que Okiwi&nbsp;?</h1>
-                </div>
-
-                <p>Okiwi est une communauté ouverte de praticiens en informatique située à Bordeaux. Ouverte parce
-                    que nous ne donnons pas de limites à notre curiosité. L’activité de l’association dépendra de ce
-                    que chacun y apportera.</p>
-
-                <p>Nous organisons entre autre&nbsp;: </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h3><i class="fa fa-keyboard-o fa-lg"></i> Coding Dojos</h3>
-
-                <p>Les coding dojos sont des sessions amusantes et intenses pendant lesquelles des développeurs
-                    améliorent
-                    leurs compétences en programmation. Okiwi organise 2 coding dojos par mois. <a href="#coding-dojo"> En
-                        savoir plus...</a></p>
-
-            </div>
-            <div class="col-sm-6">
-                <h3><i class="fa fa-beer fa-lg"></i> Apéros</h3>
-
+            <div class="col-lg-3 col-md-6 m-b-3">
+                <h4>Coding Dojos</h4>
                 <p>
-                    Quoi de mieux qu'un bon verre pour discuter des sujets qui nous
-                    passionnent&nbsp;? Une fois par mois, on se retrouve pour l'apéro sur Bordeaux.
+                    Les coding dojos sont des sessions amusantes et intenses pendant lesquelles des développeurs
+                    améliorent leurs compétences en programmation. Okiwi organise 2 coding dojos par mois.
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>L'Agile Tour Bordeaux</h3>
-
+            <div class="col-lg-3 col-md-6 m-b-3">
+                <h4>Agile Tour Bordeaux</h4>
                 <p>
-                    <a href="http://agiletourbordeaux.fr/" target="_blank">L'Agile Tour Bordeaux</a> est une étape de <a href="http://agiletour.org" target="_blank">l'Agile Tour</a>, une série
-                    d’événements à but non lucratif,
-                    qui vise principalement à promouvoir massivement l'Agilité. Okiwi organise depuis maintenant 5
-                    ans l'Agile Tour Bordeaux.
+                    <a href="http://agiletourbordeaux.fr/" target="_blank">L'Agile Tour Bordeaux</a> est un d’événement
+                    à but non lucratif, qui vise principalement à promouvoir massivement l'Agilité. Okiwi organise
+                    depuis maintenant 6 ans l'Agile Tour Bordeaux.
                 </p>
-
             </div>
-            <div class="col-sm-6">
-                <h3>Global day of code retreat</h3>
-
+            <div class="col-lg-3 col-md-6 m-b-3">
+                <h4>Geek Camp</h4>
                 <p>
-                    Le <a href="http://globalday.coderetreat.org/">Global day of code retreat</a> est une journée durant laquelle des développeurs se
-                    concentrent sur
-                    les fondamentaux du développement et du design logiciel. Okiwi est l'organisateur officiel de
-                    l'édition Bordelaise du Global Day of Code retreat depuis maintenant 3 ans&nbsp;!
-                </p>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h3><i class="fa fa-puzzle-piece fa-lg"></i> Ateliers</h3>
-
-                <p>
-                    Des ateliers divers et variés, sur l'agilité, la communication, ... . Vous voulez organiser un
-                    atelier&nbsp;? Proposez l'idée sur les <a href="https://groups.google.com/forum/?hl=fr&amp;fromgroups#!forum/okiwi">canaux de discussions Okiwi</a>.
-                </p>
-
-            </div>
-            <div class="col-sm-6">
-                <h3>Geek Camp</h3>
-
-                <p>
-                    Le <a href="/geek-camp">Geek Camp</a> est une rencontre entre informaticiens. 
-                    Il aura lieu cette année le weekend du 9, 10 et 11 séptembre.
+                    Le Geek Camp est une rencontre entre informaticiens qui se déroule sur un week end en septembre.
                     Présentations, lightning talks,
-                    séances de code, discussions, barbecues et convivialité étaient au programme de 
-                    ces éditions mémorables&nbsp;!
+                    séances de code, discussions, vin, bières et barbecues étaient au programme des éditions précédentes&nbsp;!
                 </p>
-
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h3><i class="fa fa-puzzle-piece fa-lg"></i> TTFX</h3>
-
-                <p>
-                    Les TTFX sont des manifestions digitales prenant la forme de conférences, ateliers, ou hackathon.
+            <div class="col-lg-3 col-md-6 m-b-3">
+                <h4>TTFX</h4>
+                <p>Les TTFX sont des manifestions digitales prenant la forme de conférences, ateliers, ou hackathon.
                     Elles sont pilotées par la communauté qui est libre de choisir les sujets abordés.
-                    Les conférences ont lieux tout les 3 mois, les ateliers sur demande, et <a href="http:www.codeofwar.net">code of war</a> tous les ans.
-                    <a href="http:www.ttfx.fr">Participez !</a>.
-                </p>
-
-            </div>
-            <div class="col-sm-6">
-
+                    Les conférences ont lieux tout les 3 mois, les ateliers sur demande, et
+                    <a href="http://www.codeofwar.net">code of war</a> tous les ans.
+                    <a href="http://www.ttfx.fr">Participez !</a></p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-4">
-        <br/>
-        <br/>
+<div class="bd-featurette">
+    <div class="container">
+        <h2 class="bd-featurette-title">Soutenir Okiwi</h2>
+        <p class="lead">
+            Okiwi existe depuis 10 ans. La communauté décide de contribuer bénévolement au développement de
+            l'association. De ce fait, l'ensemble des activités de l'association sont gratuites. Néanmoins il est
+            possible de soutenir l'association et d'adhérer pour devenir membre cotisant.
+        </p>
 
-        <div class="jumbotron text-center">
-            <p>
-                Des <b>coding dojos</b>, un entrainement de programmation sans pression ni stress, pour s’améliorer en
-                s'amusant.
-
-            </p>
-            <img src="/img/coding_dojo_small.jpg" id="thumbnail-coding-dojo">
-
-            <h2>Des questions&nbsp;?</h2>
-
-            <p><a href="mailto:contact@okiwi.org">contact@okiwi.org</a>
-                <br/>
-                <a href="https://twitter.com/okiwi_fr">Twitter @okiwi_fr</a>
-                <br/>
-                <a href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/okiwi">Google group Okiwi</a></p>
-        </div>
+        <p class="lead">
+            <a href="{{ "/adherer/" | prepend: site.baseurl }}" class="btn btn-outline-primary">
+                Cotisez pour soutenir l'association
+            </a>
+        </p>
     </div>
-    <div class="col-lg-8">
-        <div class="row">
-            <div class="col-lg-12">
+</div>
 
-                <div class="page-header">
-                    <h1 id="coding-dojo">Qu'est ce qu'un Coding Dojo&nbsp;?</h1>
-                </div>
+<div class="bd-featurette">
+    <div class="container">
+        <h2 class="bd-featurette-title">Coding Dojo&nbsp;?</h2>
+        <p class="lead">
+            Des <b>coding dojos</b>, sessions amusantes et intenses pendant lesquelles des développeurs améliorent
+            leurs compétences en programmation. Le principe est simple&nbsp, on prend un exercice de programmation,
+            on choisit un langage, et on essaie de coder une solution en respectant les 4 règles du design
+            simple de Kent Beck:
+        </p>
 
-                <p>Des <b>coding dojos</b>, sessions amusantes et intenses pendant lesquelles des développeurs
-                    améliorent leurs
-                    compétences en programmation.
-                    Le principe est simple&nbsp;: on prend un exercice de programmation simple, on choisit un langage, et on
-                    essaie de coder
-                    une solution en respectant les 4 règles du design simple de Kent Beck&nbsp;:
-                </p>
-                <ul>
-                    <li>passer tous les tests&nbsp;;</li>
-                    <li>aucune duplication de code&nbsp;;</li>
-                    <li>révéler les intentions par le code, être très attentif au nommage&nbsp;;</li>
-                    <li>réduire le nombre de classes et de méthodes.</li>
-                </ul>
-            </div>
+
+        <ul class="list-unstyled text-xs-center">
+            <li>passer tous les tests&nbsp;;</li>
+            <li>aucune duplication de code&nbsp;;</li>
+            <li>révéler les intentions par le code, être très attentif au nommage&nbsp;;</li>
+            <li>réduire le nombre de classes et de méthodes.</li>
+        </ul>
+
+         <p class="lead">
+            <a href="http://www.meetup.com/AgnosTech-Bordeaux/" class="btn btn-outline-primary">
+                Voir les prochains codings dojos
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <img class="img-thumbnail" src="images/coding_dojo4.jpg">
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h3><i class="fa fa-github fa-lg"></i> Katas</h3>
-
-                <p>Les <a href="http://codingdojo.org/cgi-bin/wiki.pl?KataCatalogue"><b>katas</b></a> sont des exercices
-                    de programmation avec une problématique spécifique à résoudre.
-                    Souvent assez simple au début, ils sont plus difficiles à terminer.
-                    <br>
-                    Chacun des katas effectués par Okiwi sont malheureusement disponibles sur <a
-                            href="https://github.com/okiwi">github</a>.
-                </p>
-
-            </div>
-            <div class="col-sm-6">
-                <h3><i class="fa fa-thumbs-up fa-lg"></i> Bonnes pratiques</h3>
-
-                <p>
-                    Les <a href="http://fr.wikibooks.org/wiki/Programmation_XP_Pratiques"><b>bonnes pratiques</b></a>
-                    de programmation que l'on respecte sont en outre le TDD, les principes <a
-                        href="http://philippe.developpez.com/articles/SOLIDdotNet/">SOLID</a> et <span
-                        title="Don't Repeat Yourself">DRY</span> et la programmation en binôme.
-                </p>
-            </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="img-thumbnail" src="images/coding_dojo1.jpg">
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Le lieu</h3>
-
-                <p>Les <b>séances</b> ont lieu deux fois par mois, le deuxième et quatrième lundi de chaque mois.
-                    Actuellement les deux séances ont lieu chez <a href="http://www.coolworking.fr/">Coolworking</a> en
-                    plein centre ville de Bordeaux, de 18h30 à 20h30.</p>
-
-            </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="img-thumbnail" src="images/coding_dojo2.jpg">
         </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="/img/mobile_coding_dojo1.jpg" class="img-responsive">
-            </div>
-            <div class="col-sm-4">
-                <img src="/img/mobile_coding_dojo2.jpg" class="img-responsive">
-            </div>
-            <div class="col-sm-4">
-                <img src="/img/mobile_coding_dojo3.jpg" class="img-responsive">
-            </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="img-thumbnail" src="images/coding_dojo3.jpg">
         </div>
     </div>
 </div>
 
-<script type="text/javascript">
-
-    function get_date_string_format(startDate, endDate) {
-        var month_names = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
-        var day_names = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
-        var date = startDate.getDate();
-        var day = day_names[startDate.getDay()];
-        var month = month_names[startDate.getMonth()]; //Months are zero based
-        var year = startDate.getFullYear();
-        return day + " " + date + " " + month + " " + year
-                + " de " + startDate.getHours() + "h" + startDate.getMinutes()
-                + " à " + endDate.getHours() + "h" + endDate.getMinutes();
-    }
-
-    function get_url(links) {
-        var url = '';
-        for (var i = 0; i < links.length; i++) {
-            if (links[i].type == "text/html") {
-                url = links[i].href + '&ctz=Europe/Paris';
-            }
-        }
-        return url;
-    }
-
-    function cacherVitrine() {
-        var el = document.getElementById('vitrine');
-        el.style.display = 'none';
-    }
-
-    function dessinerVitrine(lienGoogleCalendar, titre, date) {
-
-        var lien = document.getElementById('event_link');
-        lien.href = lienGoogleCalendar;
-        lien.style.display = 'block';
-
-        var iconeChargement = document.getElementById('icone-chargement');
-        iconeChargement.style.display = 'none';
-
-        var message = document.getElementById('message');
-        message.textContent = titre + ", le " + date;
-    }
-
-    request = new XMLHttpRequest;
-    request.open('GET', 'http://www.google.com/calendar/feeds/emrdkvvu6iuqkp6g2etjp5295g@group.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=1&singleevents=true&sortorder=ascending&futureevents=true', true);
-
-    request.onload = function () {
-        if (request.status >= 200 && request.status < 400) {
-            var donnees = JSON.parse(request.responseText);
-            var evenement = donnees.feed.entry[0];
-            var titre = evenement.title.$t;
-            var dateDebut = new Date(evenement.gd$when[0].startTime);
-            var dateFin = new Date(evenement.gd$when[0].endTime);
-            var date = get_date_string_format(dateDebut, dateFin);
-            var lien = get_url(evenement.link);
-            dessinerVitrine(lien, titre, date);
-        } else {
-            cacherVitrine();
-        }
-    };
-
-    request.onerror = function () {
-        cacherVitrine();
-    };
-
-    request.send();
-</script>
+</body>
