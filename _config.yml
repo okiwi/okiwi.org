@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Ouverte parce que nous ne donnons pas de limites à notre curiosité.
   L’activité de l’association dépendra de ce que chacun y apportera.
 baseurl: "/"
-url: "http://okiwi.org"
+url: "https://okiwi.org"
 twitter_username: okiwi_fr
 github_username:  okiwi
 
