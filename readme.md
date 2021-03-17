@@ -26,4 +26,15 @@ Lancer un serveur local
     jekyll serve
 
 
-Il suffit ensuite d'ouvrir son navigateur à l'adresse [http://localhost:4000/](http://localhost:4000/) 
+Il est aussi possible d'utiliser l'image [`jekyll/builder`](https://github.com/envygeeks/jekyll-docker#readme) avec [`docker`](https://www.docker.com/) :
+
+    docker run --rm \
+      --volume=$(pwd):/srv/jekyll \
+      --net=host \
+      -p 35729:35729 -p 4000:4000 \
+      --env JEKYLL_ENV=development \
+      -it jekyll/builder \
+      jekyll serve --livereload
+
+
+Il suffit ensuite d'ouvrir son navigateur à l'adresse [http://localhost:4000/](http://localhost:4000/).
