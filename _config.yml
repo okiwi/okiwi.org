@@ -3,7 +3,7 @@ title: Association Okiwi
 email: contact@okiwi.org
 description: > # this means to ignore newlines until "baseurl:"
   Okiwi est une communauté ouverte de praticiennes et praticiens en informatique, originaire de Bordeaux.
-  Okiwi est bâti autour de la bienveillance, de l’inclusion et du partage. Okiwi est une communauté qui cultive l’ouverture et la diversité. 
+  Okiwi est bâtie autour de la bienveillance, de l’inclusion et du partage. Okiwi est une communauté qui cultive l’ouverture et la diversité. 
 baseurl: "/"
 url: "https://okiwi.org"
 twitter_username: okiwi_fr
