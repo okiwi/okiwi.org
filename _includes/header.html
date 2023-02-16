@@ -24,82 +24,59 @@
         font-weight: 500;
     }
 
-    @media (max-width: 767px) {
-        .bd-navbar .nav-link {
-            float: none;
-        }
-
-        .bd-navbar .nav-link + .nav-link {
-            margin-left: 0;
-        }
-    }
+    
 
 </style>
 <header class="navbar navbar-light navbar-static-top bd-navbar">
-    <div class="container">
-        <nav>
-            <div class="clearfix">
-                <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse"
-                        data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    ☰
-                </button>
-                <a class="navbar-brand hidden-sm-up logo-link" href="{{site.url}}/">
-                    <img class="logo " src="{{ "/images/logo.png" | prepend: site.url }}" alt="Okiwi">
-                </a>
+    <div class="container justify-content-center">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand hidden-sm-up logo-link" href="{{site.url}}/">
+                <img class="logo " src="{{ "/images/logo.png" | prepend: site.url }}" alt="Okiwi">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-end" id="navbarNavDropdown">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="{{ "/adherer/" | prepend: site.url }}">
+                    Adhérer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link " href="{{ "/status/" | prepend: site.url }}">
+                    Statuts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link " href="{{ "/CoC.html" | prepend: site.url }}">
+                    Code de Conduite
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Social
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" target="_blank" href="http://www.meetup.com/fr-FR/software-craftsmanship-bdx/">
+                        Meetup
+                    </a>
+                    <a class="dropdown-item" href="{{ "/slack/" | prepend: site.url }}">
+                        Slack
+                    </a>
+                    <a class="dropdown-item" target="_blank" href="https://discord.com/invite/BQa48a2">
+                        Discord
+                    </a>
+                    <a class="dropdown-item" target="_blank" href="https://piaille.fr/@okiwi">
+                        Mastodon
+                    </a>
+                    <a class="dropdown-item" target="_blank" href="https://twitter.com/okiwi_fr">
+                        Twitter
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active nav-logo hidden-sm-down">
-                        <a id="nav-logo" class="nav-item nav-link active" href="{{site.url}}/">
-                            <img class="logo " src="{{ "/images/logo.png" | prepend: site.url }}" alt="Site Name">
-                        </a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav pull-sm-right">
-
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" href="{{ "/adherer/" | prepend: site.url }}">
-                        Adhérer
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link " href="{{ "/status/" | prepend: site.url }}">
-                        Statuts
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link " href="{{ "/CoC.html" | prepend: site.url }}">
-                        Code de Conduite
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" target="_blank" href="https://piaille.fr/@okiwi">
-                            Mastodon
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" target="_blank" href="https://twitter.com/okiwi_fr">
-                            Twitter
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" target="_blank" href="http://www.meetup.com/fr-FR/software-craftsmanship-bdx/">
-                            Meetup
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link " href="{{ "/slack/" | prepend: site.url }}">
-                            Slack
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item nav-link " target="_blank" href="https://discord.com/invite/BQa48a2">
-                            Discord
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+          </nav>
     </div>
 </header>
