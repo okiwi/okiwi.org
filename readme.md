@@ -26,15 +26,15 @@ Lancer un serveur local
     jekyll serve
 
 
-Il est aussi possible d'utiliser l'image [`jekyll/builder`](https://github.com/envygeeks/jekyll-docker#readme) avec [`docker`](https://www.docker.com/) :
+Il est aussi possible d'utiliser l'image [`jvconseil/jekyll-docker`](https://hub.docker.com/r/jvconseil/jekyll-docker) avec [`docker`](https://www.docker.com/) :
 
     docker run --rm \
       --volume=$(pwd):/srv/jekyll \
-      --net=host \
       -p 35729:35729 -p 4000:4000 \
       --env JEKYLL_ENV=development \
-      -it jekyll/builder \
+      -it jvconseil/jekyll-docker \
       jekyll serve --livereload
 
+Pour les utilisateurices de `podman`, il faut ajouter `--env JEKYLL_ROOTLESS=1`.
 
 Il suffit ensuite d'ouvrir son navigateur à l'adresse [http://localhost:4000/](http://localhost:4000/).
