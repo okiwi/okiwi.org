@@ -9,10 +9,6 @@ layout: statuts
 - **Secrétaire** : Xavier Maso
 - **Trésorière** : Stéfanie Loiseleur
 
-<div class="alert alert-warning" role="alert">
-    Les statuts présentés ici sont obsolètes et seront bientôt mis à jour. De nouveaux statuts ont été votés en Mars 2024 puis déclarés en préfecture en suivant ; Et de nouveaux changements sont imminents (Avril 2025).
-</div>
-
 # Les statuts de l'association
 
 ## Article I - Dénomination, durée et sièges
