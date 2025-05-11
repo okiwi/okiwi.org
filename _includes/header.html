@@ -44,16 +44,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link " href="{{ "/statuts/" | prepend: site.url }}">
-                    Statuts
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item nav-link" href="{{ "/conseil-d-administration/" | prepend: site.url }}">
-                    Conseil d'Administration
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-item nav-link " href="{{ "/CoC.html" | prepend: site.url }}">
                     Code de Conduite
                     </a>
@@ -79,6 +69,19 @@
                         Twitter
                     </a>
                   </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        À propos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ "/conseil-d-administration/" | prepend: site.url }}">
+                            Conseil d'Administration
+                        </a>
+                        <a class="dropdown-item" href="{{ "/statuts/" | prepend: site.url }}">
+                            Statuts
+                        </a>
+                    </div>
                 </li>
               </ul>
             </div>
