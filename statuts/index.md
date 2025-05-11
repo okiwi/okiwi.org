@@ -1,5 +1,5 @@
 ---
-layout: statuts
+layout: apropos
 ---
 
 # Les membres du bureau
