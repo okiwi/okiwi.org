@@ -2,13 +2,6 @@
 layout: apropos
 ---
 
-# Les membres du bureau
-
-- **Président** : Sam Cranford
-- **Vice-Président** : Alain Delachaux
-- **Secrétaire** : Xavier Maso
-- **Trésorière** : Stéfanie Loiseleur
-
 # Les statuts de l'association
 
 ## Article I - Dénomination
