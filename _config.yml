@@ -6,7 +6,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Okiwi est bâtie autour de la bienveillance, de l’inclusion et du partage. Okiwi est une communauté qui cultive l’ouverture et la diversité. 
 baseurl: "/"
 url: "https://okiwi.org"
-twitter_username: okiwi_fr
 github_username:  okiwi
 
 # Build settings
