@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse float-end" id="navbarNavDropdown">
               <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="{{ "/adherer/" | prepend: site.url }}">
+                    <a class="nav-item nav-link" href="{{ "/adherer" | prepend: site.url }}">
                     Adhérer
                     </a>
                 </li>
@@ -56,10 +56,10 @@
                     <a class="dropdown-item" target="_blank" href="http://www.meetup.com/fr-FR/software-craftsmanship-bdx/">
                         Meetup
                     </a>
-                    <a class="dropdown-item" href="{{ "/slack/" | prepend: site.url }}">
+                    <a class="dropdown-item" href="{{ "/slack" | prepend: site.url }}">
                         Slack
                     </a>
-                    <a class="dropdown-item" target="_blank" href="{{ "/discord/" | prepend: site.url }}">
+                    <a class="dropdown-item" target="_blank" href="{{ "/discord" | prepend: site.url }}">
                         Discord
                     </a>
                     <a class="dropdown-item" target="_blank" href="https://piaille.fr/@okiwi">
@@ -72,10 +72,10 @@
                         À propos
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ "/conseil-d-administration/" | prepend: site.url }}">
+                        <a class="dropdown-item" href="{% link conseil-d-administration.md %}">
                             Conseil d'Administration
                         </a>
-                        <a class="dropdown-item" href="{{ "/statuts/" | prepend: site.url }}">
+                        <a class="dropdown-item" href="{% link statuts.md %}">
                             Statuts
                         </a>
                     </div>
