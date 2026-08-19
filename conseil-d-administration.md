@@ -6,9 +6,7 @@ layout: apropos
 
 - **Président** : Sam Cranford
 - **Vice-Président** : Alain Delachaux
-- **Secrétaire** : Xavier Maso
+- **Secrétaire** : Jean-Baptiste Dusseaut
+- **Vice-Secrétaire** : Xavier Maso
 - **Trésorière** : Stéfanie Loiseleur
-- Josselin Auguste
-- Jean-Baptiste Dusseault
-- Ludwig Vantours
 - Mikaël Letang
